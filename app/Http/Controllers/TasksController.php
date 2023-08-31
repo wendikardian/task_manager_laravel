@@ -14,9 +14,9 @@ class TasksController extends Controller
     public function index()
     {
         // get all data from tasks
-        // $tasks = Tasks::all();
+        $tasks = Tasks::all();
         // using eager loading to get all of the data
-        $tasks = Tasks::with('user', 'image', 'status')->get();
+        // $tasks = Tasks::with('users', 'images', 'statuses')->get();
         // return view with tasks
         return view('tasks.index')->with('tasks', $tasks);
     }

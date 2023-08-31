@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 // Import TasksController to this page
 use App\Http\Controllers\TasksController;
+// import Auth
+// use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +17,11 @@ use App\Http\Controllers\TasksController;
 |
 */
 
+// Auth::routes();
+
+Auth::routes();
 Route::get('/', [TasksController::class, 'index']);
 Route::get('/tasks', [TasksController::class, 'index'])->name('home');
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
