@@ -15,9 +15,14 @@ return new class extends Migration
         // create migration for tasks with column id, user_id, image_id, status_id, title, description, note, published_at, created_at, updated_at, deleted_at
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained('users'); // user_id
-            $table->foreignId('image_id')->constrained('images'); // image_id
-            $table->foreignId('status_id')->constrained('statuses'); // status_id
+            // $table->foreignId('user_id')->constrained('users'); // user_id
+            // $table->foreignId('image_id')->constrained('images'); // image_id
+            // $table->foreignId('status_id')->constrained('statuses'); // status_id
+            // add without foreign key constraints
+            $table->unsignedBigInteger('user_id'); // user_id
+            $table->unsignedBigInteger('image_id'); // image_id
+            $table->unsignedBigInteger('status_id'); // status_id
+
             $table->string('title'); // title
             $table->text('description'); // description
             $table->text('note'); // note
