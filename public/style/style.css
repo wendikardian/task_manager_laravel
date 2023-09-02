@@ -83,6 +83,11 @@ main{
     height: 1000px;
 } */
 
+.task-list{
+    display: flex;
+    flex-wrap: wrap !important;
+}
+
 
 footer{
     background-color: #f0b86e;

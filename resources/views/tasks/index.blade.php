@@ -30,8 +30,8 @@ Tasks
 @section('pagination')
 <div class="pagination">
     {{$tasks->links()}}
+
+
 </div>
 
 @endsection
-
-
