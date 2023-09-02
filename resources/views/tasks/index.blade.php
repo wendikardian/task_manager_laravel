@@ -1,33 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- parents to layout.blade.php -->
+@extends('tasks.layout')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('style/style.css')}}">
-    <script src="https://kit.fontawesome.com/f0e17752b2.js" crossorigin="anonymous"></script>
-    <title>Task Manager - @yield('title')</title>
-</head>
+<!-- title -->
+@section('title')
+Tasks
+@endsection
 
-<body>
-    <header>
-        <nav>
-            <i class="fa-solid fa-book"></i>
-            <h1>Task Manager</h1>
-            <ul class="menu-list">
-                <li><a href="/">Home</a></li>
-                <li><a href="/tasks">Tasks</a></li>
+<!-- content -->
+@section('content')
+<div class="container">
+    <div class="task-container">
+        <h2>Tasks</h2>
+        <div class="task-list">
+            <ul>
+                @foreach($tasks as $task)
+                <li>
+                    <a href="/tasks/{{$task->id}}">
+                        {{$task->title}}
+                    </a>
+                </li>
+                @endforeach
             </ul>
-        </nav>
-        <!-- create href for login and register -->
-        <div class="auth">
-            <a href="/login">Login</a>
-            <a href="/register">Register</a>
         </div>
-    </header>
-    <main></main>
-    <footer></footer>
+    </div>
+</div>
+@endsection
 
-</body>
+<!-- pagination -->
+@section('pagination')
+<div class="pagination">
+    {{$tasks->links()}}
+</div>
 
-</html>
+@endsection
+
+

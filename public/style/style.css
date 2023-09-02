@@ -54,3 +54,40 @@ li a:hover{
     color: #1b1b1b;
     font-size: 1.5rem;
 }
+
+
+.auth{
+    display: flex;
+    /* padding: 20px;s */
+}
+
+.auth a{
+    margin: 20px;
+    border: 2px solid #1b1b1b;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.auth a:hover{
+    /* create good animation and transition while hover */
+    color: #fffaf5;
+    transition: all 0.3s ease 0s;
+    border-color: #edbe90;
+    background-color: #edbe90;
+}
+
+/*
+main{
+    background-color: #b19c81;
+    height: 1000px;
+} */
+
+
+footer{
+    background-color: #f0b86e;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

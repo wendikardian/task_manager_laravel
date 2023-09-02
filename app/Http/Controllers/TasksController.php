@@ -18,6 +18,9 @@ class TasksController extends Controller
         // using eager loading to get all of the data
         // $tasks = Tasks::with('users', 'images', 'statuses')->get();
         // return view with tasks
+        // add links pagination
+        $tasks = Tasks::paginate(10);
+        
         return view('tasks.index')->with('tasks', $tasks);
     }
 }
