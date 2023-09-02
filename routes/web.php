@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 // Import TasksController to this page
 use App\Http\Controllers\TasksController;
 // import Auth
-// use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
