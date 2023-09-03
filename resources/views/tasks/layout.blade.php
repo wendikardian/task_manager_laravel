@@ -19,6 +19,13 @@
                 <li><a href="/tasks">Tasks</a></li>
             </ul>
         </nav>
+        <!-- add search bar -->
+        <div class="search">
+            <form action="/search" method="GET">
+                <input type="text" name="search" placeholder="Search" class="search-input">
+                <button type="submit" class="button-search"><i class="fa-solid fa-search"></i></button>
+            </form>
+        </div>
         <!-- create href for login and register -->
         <div class="auth">
             <a href="/login">Login</a>

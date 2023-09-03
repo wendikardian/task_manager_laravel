@@ -23,7 +23,41 @@ header {
     /* background-color: red; */
 }
 
-.menu-list{
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* background-color: #f0b86e; */
+}
+
+.button-search {
+    border: none;
+    background-color: #e8a44a;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button-search:hover {
+    /* create good animation and transition while hover */
+    color: #fffaf5;
+    transition: all 0.3s ease 0s;
+    border-color: #edbe90;
+    background-color: #d07317;
+}
+
+.search-input{
+    border: none;
+    background-color: #e8caa3;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,47 +65,43 @@ header {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #1b1b1b;
 }
 
-.menu-list li{
+.menu-list li {
     padding: 0 10px;
     margin: 20px;
 }
 
-li a:hover{
+li a:hover {
     /* create good animation and transition while hover */
     color: #fffaf5;
     transition: all 0.3s ease 0s;
     border-color: #edbe90;
-
 }
 
-
-.fa-book{
+.fa-book {
     color: #1b1b1b;
     font-size: 1.5rem;
 }
 
-
-.auth{
+.auth {
     display: flex;
     /* padding: 20px;s */
 }
 
-.auth a{
+.auth a {
     margin: 20px;
     border: 2px solid #1b1b1b;
     padding: 10px;
     border-radius: 20px;
 }
 
-
-.auth a:hover{
+.auth a:hover {
     /* create good animation and transition while hover */
-    color: #fffaf5;
+    color: #be8955;
     transition: all 0.3s ease 0s;
     border-color: #edbe90;
     background-color: #edbe90;
@@ -83,13 +113,39 @@ main{
     height: 1000px;
 } */
 
-.task-list{
+.task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    /* border: 2px solid #1b1b1b; */
+    border-radius: 20px;
+    /* background-color: #fffaf5; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.task-list {
     display: flex;
     flex-wrap: wrap !important;
 }
 
+.task-item {
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #1b1b1b;
+    border-radius: 20px;
+    background-color: #fffaf5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
-footer{
+.task-list a:hover {
+    color: #f9c118;
+}
+
+footer {
     background-color: #f0b86e;
     height: 100px;
     display: flex;

@@ -11,17 +11,17 @@ Tasks
 <div class="container">
     <div class="task-container">
         <h2>Tasks</h2>
+
         <div class="task-list">
-            <ul>
-                @foreach($tasks as $task)
-                <li>
-                    <a href="/tasks/{{$task->id}}">
-                        {{$task->title}}
-                    </a>
-                </li>
-                @endforeach
-            </ul>
+            @foreach($tasks as $task)
+            <div class="task-item">
+                <a href="/tasks/{{$task->id}}">
+                    {{$task->title}}
+                </a>
+            </div>
+            @endforeach
         </div>
+
     </div>
 </div>
 @endsection
