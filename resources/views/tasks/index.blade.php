@@ -28,10 +28,27 @@ Tasks
 
 <!-- pagination -->
 @section('pagination')
-<div class="pagination">
-    {{$tasks->links()}}
-
-
+<div class="text-center">
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="{{$tasks->previousPageUrl()}}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            @for ($i = 1; $i <= $tasks->lastPage(); $i++)
+                <!-- <li><a href="{{$tasks->url($i)}}">{{$i}}</a></li> -->
+                <!-- fix pagination based on search keyword also -->
+                <li class="page-item"><a class="page-link" href="{{$tasks->appends(['search' => request()->search])->url($i)}}">{{$i}}</a></li>
+                @endfor
+                <li class="page-item">
+                    <a class="page-link" href="{{$tasks->nextPageUrl()}}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+        </ul>
+    </nav>
 </div>
+
 
 @endsection
