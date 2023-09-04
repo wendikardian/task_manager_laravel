@@ -136,6 +136,7 @@ main{
 
 .task-item {
     width: 25%;
+    min-height: 250px;
     margin: 20px;
     padding: 20px;
     border: 2px solid #1b1b1b;
@@ -166,4 +167,31 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.badge-status{
+    padding: 5px;
+    border-radius: 20px;
+    /* background-color: #f0b86e; */
+    color: #1b1b1b;
+    border: 2px solid #1b1b1b;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+
+.badge-draft{
+    background-color: grey;
+}
+
+.badge-published{
+    background-color: rgb(255, 216, 24);
+}
+
+.badge-verified{
+    background-color: rgb(62, 62, 169);
+}
+
+.badge-done{
+    background-color: rgb(66, 222, 66);
 }

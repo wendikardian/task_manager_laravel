@@ -14,13 +14,16 @@ class TasksController extends Controller
     public function index()
     {
         // get all data from tasks
-        $tasks = Tasks::all();
+        // $tasks = Tasks::all();
+        // get all tasks from others relational table to
+        $tasks = Tasks::with('statuses')->get();
         // using eager loading to get all of the data
         // $tasks = Tasks::with('users', 'images', 'statuses')->get();
         // return view with tasks
         // add links pagination
         $tasks = Tasks::paginate(10);
-        
+        // dd($tasks);
+
         return view('tasks.index')->with('tasks', $tasks);
     }
 }

@@ -20,7 +20,7 @@ class TasksFactory extends Factory
         return [
             'user_id' => $this->faker->numberBetween(1, 10), // user_id
             'image_id' => $this->faker->numberBetween(1, 10), // image_id
-            'status_id' => $this->faker->numberBetween(1, 10), // status_id
+            'status_id' => $this->faker->numberBetween(1, 4), // status_id
             'title' => $this->faker->sentence(), // title
             'description' => $this->faker->paragraph(), // description
             'note' => $this->faker->paragraph(), // note

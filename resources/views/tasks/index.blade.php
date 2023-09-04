@@ -15,7 +15,32 @@ Tasks
         @foreach($tasks as $task)
         <div class="task-item">
             <a href="/tasks/{{$task->id}}">
-                {{$task->title}}
+                <b>
+
+                    {{$task->title}}
+                </b>
+                <br>
+                <p>To : {{$task['users']['name']}} </p>
+                <p>Published at : {{date('d F Y H:i', strtotime($task->published_at))}}</p>
+
+                <br>
+
+                <!-- {{$task->description}} -->
+
+                <!-- if statuses id  == 1 -->
+                @if($task['statuses']['id'] == 1)
+                <span class="badge-status badge-draft">{{$task['statuses']['title']}}</span>
+                @endif
+                @if($task['statuses']['id'] == 2)
+                <span class="badge-status badge-published">{{$task['statuses']['title']}}</span>
+                @endif
+                @if($task['statuses']['id'] == 3)
+                <span class="badge-status badge-verified">{{$task['statuses']['title']}}</span>
+                @endif
+                @if($task['statuses']['id'] == 4)
+                <span class="badge-status badge-done">{{$task['statuses']['title']}}</span>
+                @endif
+
             </a>
         </div>
         @endforeach
