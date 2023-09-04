@@ -22,6 +22,10 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes();
 Route::get('/', [TasksController::class, 'index']);
 Route::get('/tasks', [TasksController::class, 'index'])->name('task.index');
+Route::get('/tasks/draft', [TasksController::class, 'index'])->name('task.draft');
+Route::get('/tasks/published', [TasksController::class, 'index'])->name('task.published');
+Route::get('/tasks/verified', [TasksController::class, 'index'])->name('task.verified');
+Route::get('/tasks/done', [TasksController::class, 'index'])->name('task.done');
 Route::get('/tasks/create', [TasksController::class, 'create'])->name('task.create');
 Route::get('/tasks/{id}', [TasksController::class, 'show'])->name('task.show');
 
