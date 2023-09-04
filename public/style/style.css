@@ -128,11 +128,14 @@ main{
 
 .task-list {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap !important;
 }
 
 .task-item {
-    width: 50%;
+    width: 25%;
     margin: 20px;
     padding: 20px;
     border: 2px solid #1b1b1b;
@@ -146,7 +149,11 @@ main{
 }
 
 main {
-    width: 80% !important;
+    width: 90% !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebar-custom {

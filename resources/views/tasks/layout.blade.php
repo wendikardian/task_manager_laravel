@@ -94,7 +94,7 @@
             <a href="/register">Register</a>
         </div>
     </header>
-    <div class="row" style="max-width: 90%;">
+    <div class="row" style="max-width: 100%;">
         <!-- Sidebar -->
         <div class="d-flex flex-column flex-shrink-0 bg-light" style="width: 4.5rem;">
             <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
