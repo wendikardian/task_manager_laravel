@@ -127,6 +127,11 @@
                         <i class="fa-solid fa-square-check"></i>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('task.create')}}" class="nav-link py-3 border-bottom" aria-current="page" title="Add Task" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="fa-regular fa-square-plus"></i>
+                    </a>
+                </li>
 
             </ul>
             <div class="dropdown border-top">

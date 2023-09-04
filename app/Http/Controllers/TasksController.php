@@ -45,4 +45,11 @@ class TasksController extends Controller
         // return view with tasks
         return view('tasks.show')->with('tasks', $tasks);
     }
+
+    public function create()
+    {
+        // return view
+        // echo "nice";
+        return view('tasks/create');
+    }
 }
