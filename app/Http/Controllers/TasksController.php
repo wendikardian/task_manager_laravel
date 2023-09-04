@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 // Import model Tasks
 use App\Models\Tasks;
+use App\Models\Users;
 
 
 class TasksController extends Controller
@@ -50,6 +51,8 @@ class TasksController extends Controller
     {
         // return view
         // echo "nice";
-        return view('tasks/create');
+        // get all data from Users models
+        $users = Users::all();
+        return view('tasks/create')->with('users', $users);
     }
 }
