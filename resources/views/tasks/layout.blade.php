@@ -83,7 +83,8 @@
         </nav>
         <!-- add search bar -->
         <div class="search">
-            <form action="/search" method="GET">
+            <form action="{{route('task.index')}}" method="POSt">
+                @method('get')
                 <input type="text" name="search" placeholder="Search" class="search-input">
                 <button type="submit" class="button-search"><i class="fa-solid fa-search"></i></button>
             </form>
@@ -96,7 +97,7 @@
     </header>
     <div class="row" style="max-width: 100%;">
         <!-- Sidebar -->
-        <div class="d-flex flex-column flex-shrink-0 bg-light" style="width: 4.5rem;">
+        <div class="d-flex flex-column flex-shrink-0 bg-light" style="width: 4.5rem; ">
             <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
                 <li class="nav-item">
                     <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">

@@ -124,9 +124,11 @@ main{
     border-radius: 20px;
     /* background-color: #fffaf5; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
 .task-list {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -135,7 +137,7 @@ main{
 }
 
 .task-item {
-    width: 25%;
+    width: 300px;
     min-height: 250px;
     margin: 20px;
     padding: 20px;
@@ -169,7 +171,7 @@ footer {
     align-items: center;
 }
 
-.badge-status{
+.badge-status {
     padding: 5px;
     border-radius: 20px;
     /* background-color: #f0b86e; */
@@ -179,19 +181,18 @@ footer {
     margin-top: 20px;
 }
 
-
-.badge-draft{
+.badge-draft {
     background-color: grey;
 }
 
-.badge-published{
+.badge-published {
     background-color: rgb(255, 216, 24);
 }
 
-.badge-verified{
+.badge-verified {
     background-color: rgb(62, 62, 169);
 }
 
-.badge-done{
+.badge-done {
     background-color: rgb(66, 222, 66);
 }
