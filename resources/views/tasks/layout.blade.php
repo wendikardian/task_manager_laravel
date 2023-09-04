@@ -104,6 +104,28 @@
                         <i class="fa-solid fa-house"></i>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="Draft" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <!-- add icon home fontawesome -->
+                        <i class="fa-solid fa-file"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="Published" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <!-- add icon home fontawesome -->
+                        <i class="fa-solid fa-upload"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="Validate" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="fa-solid fa-marker"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="Validate" data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i class="fa-solid fa-square-check"></i>
+                    </a>
+                </li>
 
             </ul>
             <div class="dropdown border-top">
