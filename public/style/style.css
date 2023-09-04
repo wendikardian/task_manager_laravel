@@ -48,7 +48,7 @@ header {
     background-color: #d07317;
 }
 
-.search-input{
+.search-input {
     border: none;
     background-color: #e8caa3;
     padding: 10px;
@@ -143,6 +143,14 @@ main{
 
 .task-list a:hover {
     color: #f9c118;
+}
+
+main {
+    width: 80% !important;
+}
+
+.sidebar-custom {
+    width: 12% !important;
 }
 
 footer {
